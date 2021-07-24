@@ -463,7 +463,9 @@ namespace account_book
                 }
             }
             Gglobal.stat.fnlist.Sort();
+            MessageBox.Show("testing!");
             makeyear();
+            
         }
 
         public void makeyear()
