@@ -53,3 +53,16 @@ D:\Work\VS 2019\account book(최종)\obj\Release\account book.csproj.GenerateRes
 D:\Work\VS 2019\account book(최종)\obj\Release\account book.exe
 D:\Work\VS 2019\account book(최종)\obj\Release\account book.pdb
 D:\Work\VS 2019\account book(최종)\obj\Release\account book.csproj.CoreCompileInputs.cache
+D:\Work\github\Working\bin\Release\account book.exe.config
+D:\Work\github\Working\bin\Release\account book.exe
+D:\Work\github\Working\bin\Release\account book.pdb
+D:\Work\github\Working\obj\Release\account_book.Account.resources
+D:\Work\github\Working\obj\Release\account_book.Category.resources
+D:\Work\github\Working\obj\Release\account_book.House.resources
+D:\Work\github\Working\obj\Release\account_book.Properties.Resources.resources
+D:\Work\github\Working\obj\Release\account_book.Search.resources
+D:\Work\github\Working\obj\Release\account_book.Statistics.resources
+D:\Work\github\Working\obj\Release\account book.csproj.GenerateResource.cache
+D:\Work\github\Working\obj\Release\account book.csproj.CoreCompileInputs.cache
+D:\Work\github\Working\obj\Release\account book.exe
+D:\Work\github\Working\obj\Release\account book.pdb

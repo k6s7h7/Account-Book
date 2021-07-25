@@ -30,6 +30,7 @@ namespace account_book
             
             this.BackColor = Color.FromArgb(218, 223, 232);
             this.AutoScroll = true;
+            this.TopMost = true;
             this.Text = "계정관리";
             this.Font = new Font(Statics.font, 14, FontStyle.Bold);
             this.AutoScaleMode = AutoScaleMode.Dpi;
