@@ -25,7 +25,8 @@ namespace account_book
         public List<Gdata> glist = new List<Gdata>();
         public List<string> fnlist = new List<string>();
         public double[] itemvalue;
-        public List<Yeardata> yearlist = new List<Yeardata>(); 
+        public List<Yeardata> yearlist = new List<Yeardata>();
+        public int END = 0;
 
         public Statistics()
         {
@@ -40,8 +41,11 @@ namespace account_book
             itemvalue = new double[Globals.house.oitemlist.Count];
             showcht = new Showchart();
             new Readfile();
-            makecombo();
-            makechart();
+            if (END == 0)
+            {
+                makecombo();
+                makechart();
+            }
             this.FormClosing += new FormClosingEventHandler(closeform);
         }
 
@@ -437,7 +441,7 @@ namespace account_book
         public Readfile()
         {
             arranging();
-            readfile();
+            if (Gglobal.stat.END == 0) readfile();
         }
         public void arranging()
         {
@@ -462,10 +466,16 @@ namespace account_book
                     }
                 }
             }
-            Gglobal.stat.fnlist.Sort();
-            MessageBox.Show("testing!");
-            makeyear();
-            
+            if(Gglobal.stat.fnlist.Count < 1)
+            {
+                MessageBox.Show("자료가 없습니다");
+                Gglobal.stat.END = 1;
+            }
+            else
+            {
+                Gglobal.stat.fnlist.Sort();
+                makeyear();
+            }
         }
 
         public void makeyear()

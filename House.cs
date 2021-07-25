@@ -51,7 +51,6 @@ namespace account_book
         private void House_Load(object sender, EventArgs e)
         {
             Globals.house = this;
-
             
             intervallist = new List<int>();
             oitemlist = new List<Listdata>();
@@ -79,6 +78,7 @@ namespace account_book
             new Makemenu();
             inputgroup.makecombo();
             this.FormClosing += new FormClosingEventHandler(closeform);
+            if (list.Count < 1) makeaccount();
         }
 
         public void closeform(object sender, FormClosingEventArgs e)
